@@ -1,0 +1,86 @@
+
+#game {
+  text-align: center;
+}
+
+#board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  margin: 20px auto;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+}
+
+.cell {
+  width: 90px;
+  height: 90px;
+  font-size: 60px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cell:hover {
+  background-color: #cfcfcf;
+}
+
+.row:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#status {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+input {
+  padding: 5px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  margin: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  background-color: #3cb371;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button:hover {
+  background-color: #2e8b57;
+}
+
+#play-ai-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: #3cb371;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#play-ai-button:hover {
+  background-color: #2e8b57;
+}
